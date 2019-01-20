@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Toronto Waste Lookup</title>
+
+
+    <!-- Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="assets/lib/bootstrap.min.css" >
+
+    <!--JQuery-->
+    <script src="assets/lib/jquery-3.2.1.slim.min.js" ></script>
+
+    <style>
+            .list-body{
+                flex:3
+            }
+            ul li h5{
+                flex:1
+            }
+            .star{
+                color:grey;
+            }
+            .green-star .star{
+                color:lime;
+            }
+    
+            li.favorite-item{
+                display:none !important;
+            }
+            li.favoirte-item.green-star{
+                display:flex;
+            }
+            h1 {
+                background-image: linear-gradient(to right,#1d5895, #23965f);
+            }
+    
+    
+        </style>
+</head>
+<body>
+
+    <h1 class="Display-1 text-center py-5 text-light">Toronto Waste Lookup</h1>
+
+    <div class="container">
+        
+
+        <div class="d-flex my-4">
+        <input class="form-control " type="text" placeholder="Enter Keywords">
+        <button type="button" class="btn btn-success ml-3">Search</button>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+
+        <ul class="list-group border-0 search">
+
+        </ul>
+    </div>
+
+    <div class="container">
+        <ul class="list-group favorite-list">
+
+        </ul>
+    </div>
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="assets/lib/popper.min.js"></script>
+    <script src="assets/lib/bootstrap.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
